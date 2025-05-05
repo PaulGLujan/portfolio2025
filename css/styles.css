@@ -1,0 +1,71 @@
+/* === Root Variables === */
+:root {
+    --accent-color: #CCF381;
+    --background-color: #4831D4;
+    --text-color: #fff;
+
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 48px;
+}
+
+/* === Typography === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
+}
+
+body p {
+    font-family: "SF Pro Rounded", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+}
+
+.title {
+    font-size: 2.25rem;
+}
+
+.subheading {
+    font-size: 1.25rem;
+}
+
+/* === Layout === */
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+    gap: 12px;
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    padding-top: var(--spacing-2xl);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.about-section .subheading {
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+/* === Utilities === */
+.text-accent {
+    color: var(--accent-color)
+}
