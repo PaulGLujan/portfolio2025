@@ -48,10 +48,16 @@ body {
     padding-top: var(--spacing-2xl);
 }
 
-.header {
+header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md)
 }
 
 .about-section {
