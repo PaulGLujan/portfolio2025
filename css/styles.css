@@ -4,6 +4,7 @@
     --background-color: #4831D4;
     --text-color: #fff;
 
+    --spacing-sm: 8px;
     --spacing-md: 12px;
     --spacing-lg: 16px;
     --spacing-xl: 24px;
@@ -54,10 +55,38 @@ header {
     gap: var(--spacing-md);
 }
 
-header nav {
+.social-media-links {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-md)
+}
+
+.photo-section {
+    margin: auto;
+}
+
+/* === Image with Offset === */
+.image-with-offset {
+    height: 180px;
+    position: relative;
+    width: 180px;
+}
+
+.image-with-offset img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-with-offset .offset-square {
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+    left: var(--spacing-sm);
+    position: absolute;
+    top: var(--spacing-sm);
+    width: 100%;
+    z-index: -1;
 }
 
 .about-section {
