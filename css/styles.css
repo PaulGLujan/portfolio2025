@@ -12,6 +12,10 @@
     --font-size-xl: 1.25rem;
     --font-size-2xl: 2.25rem;
 
+    --font-weigth-semibold: 600;
+
+    --spacing-xxs: 4px;
+    --spacing-xs: 6px;
     --spacing-sm: 8px;
     --spacing-md: 12px;
     --spacing-lg: 16px;
@@ -106,6 +110,44 @@ header {
 .about-section .subheading {
     padding-top: 20px;
     padding-bottom: 24px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    padding-top: var(--spacing-3xl)
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.experience-dates {
+    color: var(--accent-color);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weigth-semibold);
+}
+
+.experience-title {
+    font-weight: var(--font-weigth-semibold);
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xs);
+}
+
+.chip {
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    color: var(--text-dark);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weigth-semibold);
+    padding: var(--spacing-xxs) var(--spacing-md);
 }
 
 /* === Utilities === */
