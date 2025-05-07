@@ -22,6 +22,7 @@
     --spacing-xl: 24px;
     --spacing-2xl: 32px;
     --spacing-3xl: 48px;
+    --spacing-4xl: 64px;
 }
 
 /* === Typography === */
@@ -52,10 +53,7 @@ body p {
 /* === Layout === */
 body {
     background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
     font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
-    gap: 12px;
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
     padding-top: var(--spacing-2xl);
@@ -101,37 +99,35 @@ header {
     z-index: -1;
 }
 
-.about-section {
+main {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-4xl);
+    padding-top: var(--spacing-4xl);
 }
 
-.about-section .subheading {
-    padding-top: 20px;
-    padding-bottom: 24px;
+main .subheading {
+    padding-bottom: var(--spacing-2xl);
 }
 
-#experience {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-2xl);
-    padding-top: var(--spacing-3xl)
+#about-section p {
+    padding-bottom: var(--spacing-lg);
 }
 
-.experience-item {
+#experience .experience-item {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-3xl);
 }
 
-.experience-dates {
+#experience .experience-dates {
     color: var(--accent-color);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weigth-semibold);
 }
 
-.experience-title {
+#experience .experience-title {
     font-weight: var(--font-weigth-semibold);
 }
 
