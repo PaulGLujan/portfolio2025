@@ -54,6 +54,7 @@ body p {
 body {
     background-color: var(--background-color);
     font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+    padding-bottom: var(--spacing-xl);
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
     padding-top: var(--spacing-2xl);
