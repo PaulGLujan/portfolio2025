@@ -78,6 +78,7 @@ figure {
     body {
         display: flex;
         height: 100vh;
+        margin: 0;
         overflow: hidden;
         padding: 0 var(--spacing-3xl);
     }
@@ -91,9 +92,10 @@ header {
 
 @media (min-width: 1024px) {
     header {
-        max-height: 100vh;
+        box-sizing: border-box;
         padding-bottom: var(--spacing-5xl);
         padding-top: var(--spacing-5xl);
+        padding-right: var(--spacing-5xl);
         width: 48%;
     }
 }
