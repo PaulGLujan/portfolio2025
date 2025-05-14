@@ -77,6 +77,8 @@ figure {
 @media (min-width: 1024px) {
     body {
         display: flex;
+        height: 100vh;
+        overflow: hidden;
         padding: 0 var(--spacing-3xl);
     }
 }
@@ -155,7 +157,9 @@ main {
 
 @media (min-width: 1024px) {
     main {
+        overflow-y: auto;
         padding-top: var(--spacing-5xl);
+        scrollbar-width: none;
         width: 52%;
     }
 }
