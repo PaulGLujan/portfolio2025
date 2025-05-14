@@ -170,6 +170,33 @@ main .subheading {
     padding-bottom: var(--spacing-2xl);
 }
 
+.page-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-3xl) 0;
+}
+
+.page-navigation a {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+}
+
+.page-navigation a::before {
+    content: '';
+    display: block;
+    width: var(--spacing-2xl);
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.page-navigation a:hover::before {
+    width: 64px;
+}
+
 #about-section p {
     padding-bottom: var(--spacing-lg);
 }
@@ -208,5 +235,11 @@ main .subheading {
 
 /* === Utilities === */
 .text-accent {
-    color: var(--accent-color)
+    color: var(--accent-color);
+}
+
+@media(max-width: 1023px) {
+    .lg-only {
+        display: none;
+    }
 }
