@@ -5,6 +5,8 @@
     --text-color: #fff;
     --text-dark: #3B0D11;
 
+    --breakpoint-lg: 1024px;
+
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -23,6 +25,13 @@
     --spacing-2xl: 32px;
     --spacing-3xl: 48px;
     --spacing-4xl: 64px;
+    --spacing-5xl: 96px;
+}
+
+@media (min-width: 1025px) {
+    :root {
+        font-size: 1.25rem;
+    }
 }
 
 /* === Typography === */
@@ -60,10 +69,31 @@ body {
     padding-top: var(--spacing-2xl);
 }
 
+figure {
+    margin: 0;
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        padding: 0 var(--spacing-3xl);
+    }
+}
+
 header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+}
+
+@media (min-width: 1024px) {
+    header {
+        max-height: 100vh;
+        padding-bottom: var(--spacing-5xl);
+        padding-top: var(--spacing-5xl);
+        width: 48%;
+    }
 }
 
 .social-media-links {
@@ -73,7 +103,23 @@ header {
 }
 
 .photo-section {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-section-lg {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .photo-section-mobile {
+        display: none;
+    }
+
+    .photo-section-lg {
+        display: block;
+        margin-bottom: var(--spacing-xxs);
+    }
 }
 
 /* === Image with Offset === */
@@ -105,6 +151,13 @@ main {
     flex-direction: column;
     gap: var(--spacing-4xl);
     padding-top: var(--spacing-4xl);
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding-top: var(--spacing-5xl);
+        width: 52%;
+    }
 }
 
 main .subheading {
