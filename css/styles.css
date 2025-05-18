@@ -193,6 +193,10 @@ main .subheading {
     transition: width 0.3s ease;
 }
 
+nav a.active::before {
+    width: 64px;
+}
+
 .page-navigation a:hover::before {
     width: 64px;
 }
