@@ -205,6 +205,7 @@ nav a.active::before {
     padding-bottom: var(--spacing-lg);
 }
 
+/* === Experience Section === */
 #experience .experience-item {
     display: flex;
     flex-direction: column;
@@ -226,6 +227,7 @@ nav a.active::before {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-xs);
+    padding-top: var(--spacing-xxs)
 }
 
 .chip {
